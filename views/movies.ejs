@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/styles.css" rel="stylesheet" />
+    <title>Movies</title>
+</head>
+
+<body>
+    <div id="moviesPage">
+        <div class="container">
+            <h4>RESULTS ></h4>
+
+            <%dB.forEach(function(element){%>
+                <div class="content">
+                    <div id="pic">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/<%=element.poster_path%>" alt="poster">
+                    </div>
+                    <div class="text">
+                        <div id="title">
+                            <p>
+                                <%=element.original_title%>
+                            </p>
+                        </div>
+                        <div id="synopsis"> <span>synopsis</span>
+                            <p>
+                                <%=element.overview%>
+                            </p>
+                        </div>
+                        <div class="data">
+                            <div id="date"><span>release date</span>
+                                <p>
+                                    <%=element.release_date%>
+                                </p>
+                            </div>
+
+                            <div id="rating"><span>rating</span>
+                                <p>
+                                    <%=element.vote_average%>
+                                </p>
+                            </div>
+                            <div " id="votes "> <span>votes</span>
+                            <p>
+                                <%=element.vote_count%>
+                            </p>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+                <%});%>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

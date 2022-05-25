@@ -1,0 +1,102 @@
+body {
+    text-align: center;
+    background-color: black;
+}
+
+#searchPage .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#searchPage .content {
+    padding: 50px;
+}
+
+h1 {
+    color: white;
+}
+
+input {
+    width: 300px;
+    height: 25px;
+    background-color: grey;
+    color: white;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: red;
+}
+
+#moviesPage .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto 60px;
+    padding: 15px;
+    width: 600px;
+    border: 0.5px groove rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+h2,
+h3 {
+    display: inline;
+}
+
+h4 {
+    text-transform: uppercase;
+    padding: 10px;
+    margin-left: 372px;
+    width: 300px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+span {
+    color: grey;
+    font-size: 10px;
+}
+
+#pic img {
+    width: 150px;
+    height: 220px;
+    float: left;
+    padding: 20px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.text {
+    padding: 15px;
+    width: 350px;
+}
+
+.data {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text p {
+    color: white;
+    margin: 0 0 8px 0;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+#title p {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 0.5px groove rgba(255, 255, 255, 0.2);
+}
+
+#title p,
+#synopsis,
+span {
+    text-align: left;
+}
